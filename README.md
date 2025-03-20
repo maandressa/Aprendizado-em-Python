@@ -18,16 +18,18 @@ Descriptografia: Para descriptografar, basta aplicar o deslocamento no sentido i
 Características:
 É uma cifra de substituição, onde cada letra é substituída por outra.
 Simples de implementar, mas não é segura para criptografia moderna, pois pode ser facilmente quebrada com análise de frequência.
-Como a Cifra de César foi Implementada no Código
-O código que você forneceu implementa a Cifra de César da seguinte forma:
+
+
 Texto Original e Deslocamento:
 O texto a ser criptografado é 'Hello World'.
 O deslocamento (shift) é definido como 3.
 Alfabeto:
 O alfabeto usado é 'abcdefghijklmnopqrstuvwxyz'. O código só criptografa letras minúsculas.
+
 Processamento de Cada Caractere:
 O código percorre cada caractere do texto original.
 Se o caractere for um espaço, ele é adicionado ao texto criptografado sem alteração.
+
 Se o caractere for uma letra do alfabeto, o código:
 Encontra a posição da letra no alfabeto.
 Aplica o deslocamento para encontrar a nova letra.
