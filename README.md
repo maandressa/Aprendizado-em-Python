@@ -2,7 +2,7 @@
 
 Repositório para incluir meus aprendizados em python. 
 
-Projetos variados como Python, Computação Cietífica com Python e Análise de Dados.
+Projetos variados como Python, Computação Cietífica com Python, Machine Learning e Análise de Dados.
 
 1º Projeto Cifra de César.
 
@@ -38,3 +38,38 @@ Se o caractere não for uma letra (como números ou pontuações), ele é adicio
 Resultado Final:
 O texto criptografado é armazenado na variável encrypted_text.
 Para 'Hello World' e um deslocamento de 3, o resultado é 'khoor zruog'.
+
+---------------------------
+
+2º Projeto Ressonância MLP
+
+Este projeto utiliza redes neurais artificiais (MLP – Multi-Layer Perceptron) para prever valores contínuos a partir de dados de entrada. O objetivo é testar diferentes configurações de neurônios e funções de ativação, avaliando qual modelo apresenta melhor desempenho.
+
+Como Funciona:
+
+Carregamento dos dados: Os datasets de treino e teste são lidos do Google Drive (ou enviados manualmente).
+
+Separação em variáveis: As colunas x1, x2, x3 são usadas como entradas (features) e a coluna d como saída (target).
+
+Configuração dos modelos: São definidos hiperparâmetros fixos (taxa de aprendizado, número de épocas) e diferentes combinações de neurônios e funções de ativação (tanh, relu, logistic).
+
+Treinamento: Cada configuração é treinada com o MLPRegressor da biblioteca scikit-learn.
+
+Avaliação: O código calcula métricas como MAE, MSE, RMSE, MAPE e R² para medir a qualidade das previsões.
+
+Visualizações: São gerados gráficos da curva de perda, comparação entre valores reais e previstos, e dispersão dos resultados.
+
+Seleção do melhor modelo: O modelo com menor perda final é escolhido como o mais adequado para os dados.
+
+Características:
+
+Permite comparar diferentes arquiteturas de rede neural.
+
+Usa métricas estatísticas para validar o desempenho.
+
+Inclui gráficos para análise visual dos resultados.
+
+É um exemplo prático de aplicação de Machine Learning com Python em regressão.
+
+Resultado Final:  
+O código identifica automaticamente a melhor configuração de rede neural para os dados fornecidos, mostrando métricas de desempenho e gráficos que ajudam a entender como o modelo se comporta em relação aos valores reais.
